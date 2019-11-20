@@ -25,13 +25,13 @@ class DisplayView extends BaseView {
 
 		this.DISPLAY_UPDATE_INTERVAL = 5000;
 		this.CONTROLS_VISIBLE_PERIOD = 3000;
-		
+
 		let query = Util.get_GET_parameters();
-		
+
 		this.controller = new DisplayController(api);
 		this.queue = null;
 		this.slide = null;
-		
+
 		this.statics = null;
 		this.buttons = null;
 
@@ -332,7 +332,7 @@ class DisplayView extends BaseView {
 		* it compatible with the SelectDialog class.
 		*/
 		for (let v in queues) { tmp[queues[v]] = queues[v]; }
-		
+
 		let dialog = new SelectDialog(
 			'Select a queue',
 			'',
